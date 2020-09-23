@@ -5,7 +5,7 @@
     "lib": ["dom","es6"],                     /* Specify library files to be included in the compilation. */
     "sourceMap": true,                     /* Generates corresponding '.map' file. */
     "outDir": "dist",                         /* Redirect output structure to the directory. */
-    "rootDir": "src",                         /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "rootDir": "./",                         /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     "removeComments": true,                   /* Do not emit comments to output. */
     "strict": true,                           /* Enable all strict type-checking options. */
     "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
@@ -24,9 +24,8 @@
     "resolveJsonModule": true,
   },
   "files": [
-    "src/@types/graphql.d.ts",
-    "src/@types/constraintDirective.d.ts",
+    "src/@types/graphql.d.ts"
   ],
   "exclude": [ "node_modules" ],
-  "include": [ "src/**/*.ts" ]
+  "include": [ "src/**/*.ts", "test/**/*.ts" ]
 }
